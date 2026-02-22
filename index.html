@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <!-- ========================================== -->
+    <!-- 1. FIREBASE SDK (TAMBAHKAN DI PALING ATAS) -->
+    <!-- ========================================== -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database-compat.js"></script>
+    
+    <!-- KONFIGURASI FIREBASE -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBQgDXOLtINJ2RLXzLqpXFY...", // GANTI DARI CONSOLE
+            authDomain: "kantin-smansa.firebaseapp.com",
+            databaseURL: "https://kantin-smansa-default-rtdb.asia-southeast1.firebasedatabase.app/",
+            projectId: "kantin-smansa",
+            storageBucket: "kantin-smansa.appspot.com",
+            messagingSenderId: "897377252341",
+            appId: "1:897377252341:web:b92c55a3ee..."
+        };
+        
+        // NYALAKAN FIREBASE
+        firebase.initializeApp(firebaseConfig);
+        
+        // SINGKATAN BIAR MUDAH
+        const DB = firebase.database();
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kantin Smansa - Pesan Makanan Online</title>
